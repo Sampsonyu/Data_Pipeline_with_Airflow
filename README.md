@@ -26,7 +26,7 @@ Here are the s3 links for datasets used in this project:
     
 Data-Pipeline-with-Airflow    
 ├── dags                           # Airflow DAGs location
-│   ├── etl_dag.py
+│   └── etl_dag.py
 ├── plugins
 │   ├── __init__.py
 │   ├── helpers
@@ -40,7 +40,7 @@ Data-Pipeline-with-Airflow
 │       └── stage_redshift.py      # S3ToRedshiftOperator
 |── crate_table.sql
 |── images
-|   └─── dag_graph_view.png        # DAG Graph View
+|   └── dag_graph_view.png         # DAG Graph View
 └── README.md                      # Project description
     
 ```
