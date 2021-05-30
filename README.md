@@ -20,29 +20,26 @@ Here are the s3 links for datasets used in this project:
 `Log data: s3://udacity-dend/log_data`
 `Song data: s3://udacity-dend/song_data`
 
-## Structure
-
+## Project Structure
+```
 Data-Pipeline-with-Airflow
 │   README.md                    # Project description
 └───airflow                      # Airflow home
 |   |
 │   └───dags                             # Airflow DAGs location
-│   |   │ etl_dag.py  # DAG definition
-|   |   |
+│   |   └─── etl_dag.py  # DAG definition
 |   └───plugins
-│       │
-|       └───helpers
-|       |   | sql_queries.py     # All sql queries required
-|       |
-|       └───operators
-|       |   | data_quality.py    # DataQualityOperator
-|       |   | load_dimension.py  # LoadDimensionOperator
-|       |   | load_fact.py       # LoadFactOperator
-|       |   | s3_to_redshift.py  # S3ToRedshiftOperator
-|___images
-|   | dag_graph_view.png # DAG Graph View
-
-
+|   |   └─── helpers
+|   |   |   └─── sql_queries.py     # All sql queries required
+|   |   └───operators
+|   |       └─── data_quality.py    # DataQualityOperator
+|   |       └─── load_dimension.py  # LoadDimensionOperator
+|   |       └─── load_fact.py       # LoadFactOperator
+|   |       └─── s3_to_redshift.py  # S3ToRedshiftOperator
+|   └─── crate_table.sql
+└───images
+    └─── dag_graph_view.png # DAG Graph View
+```
 
 
 Project has two directories named `dags` and `plugins`. A create tables script and readme file are at root level:
