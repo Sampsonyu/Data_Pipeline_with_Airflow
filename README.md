@@ -18,6 +18,7 @@ The goal of this project is to author a data pipeline workflow created with cust
 Here are the s3 links for datasets used in this project:
 
 `Log data: s3://udacity-dend/log_data`
+
 `Song data: s3://udacity-dend/song_data`
 
 ## Project Structure
