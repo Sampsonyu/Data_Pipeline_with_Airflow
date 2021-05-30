@@ -12,7 +12,7 @@ The source datasets consist of JSON logs that tell about user activity in the ap
 ## Data Pipeline
 
 The goal of this project is to author a data pipeline workflow created with custom operators within the Airflow platform that perform tasks such as staging data, populating the data warehouse, and running quality checks. A high-level implementation of the pipeline is
-![ERD image](images/dag_graph_view.PNG) as illustrated below.
+![ERD image](images/dag_graph_view.png) as illustrated below.
 
 ## Datasets
 Here are the s3 links for datasets used in this project:
