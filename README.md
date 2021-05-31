@@ -26,6 +26,7 @@ Here are the s3 links for datasets used in this project:
     
 Data-Pipeline-with-Airflow    
 ├── dags                           # Airflow DAGs location
+│   ├── create_tables_dag.py       # DAG used for creating tables on Redshift
 │   └── etl_dag.py
 ├── plugins
 │   ├── __init__.py
@@ -45,7 +46,7 @@ Data-Pipeline-with-Airflow
     
 ```
 
-- `create_tables.sql`: SQL create table statements provided with template.
+- `create_tables_dag.py`: Dag for creating tables on Redshift 
 - `etl_dag.py`: Defines main DAG, tasks and link the tasks in required order.
 - `stage_redshift.py`: Defines `StageToRedshiftOperator` to copy JSON data from S3 to staging tables in the Redshift via `copy` command.
 - `load_dimension.py`: Defines `LoadDimensionOperator` to load a dimension table from staging table(s).
